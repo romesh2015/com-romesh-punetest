@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view_design"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_view_height"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_view_profile_pic"
+                android:layout_width="@dimen/circular_view_dimen"
+                android:layout_height="@dimen/circular_view_dimen"
+                app:civ_border_color="#FFFFFF"
+                android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow"
+                app:civ_border_width="@dimen/dimen_8dp"
+                android:elevation="@dimen/dimen_8dp"
+                android:layout_centerHorizontal="true"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="@dimen/dimen_8dp"
+                app:civ_shadow_color="@android:color/black"/>
+
+            <LinearLayout
+                android:id="@+id/testView"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorAccent"
+                android:layout_height="@dimen/dimen_150dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/testView"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address_section"
+                android:layout_below="@+id/image_view_profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="normal"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="24sp"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/address_section"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:layout_marginRight="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/btn_globe"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/button_size"
+                    android:background="@drawable/ic_globe" />
+                <ImageButton
+                    android:id="@+id/btn_calender"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/button_size"
+                    android:background="@drawable/ic_calender" />
+                <ImageButton
+                    android:id="@+id/btn_location"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/button_size"
+                    android:background="@drawable/ic_location" />
+                <ImageButton
+                    android:id="@+id/btn_phone"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/button_size"
+                    android:background="@drawable/ic_phone" />
+                <ImageButton
+                    android:id="@+id/btn_account"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/button_size"
+                    android:background="@drawable/ic_account" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

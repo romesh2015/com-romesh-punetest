@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Tinder</string>
+    <string name="internet_not_found">Internet connection not found!</string>
+    <string name="record_not_found_db">Favourite profile not found to show in offline!</string>
+</resources>

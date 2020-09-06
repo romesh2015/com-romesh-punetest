@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="width_size">380dp</dimen>
+    <dimen name="height_size">404dp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+    <dimen name="layout_height">120dp</dimen>
+    <dimen name="custom_view_height">450dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_150dp">150dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="circular_view_dimen">250dp</dimen>
+</resources>
